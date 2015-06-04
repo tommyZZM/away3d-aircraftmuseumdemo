@@ -59,12 +59,20 @@
             // JavaScript enabled so display the flashContent div in case it is not replaced with a swf object.
             swfobject.createCSS("#flashContent", "display:block;text-align:left;");
         </script>
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     </head>
     <body>
         <!-- SWFObject's dynamic embed method replaces this alternative HTML content with Flash content when enough
              JavaScript and Flash plug-in support is available. The div is initially hidden so that it doesn't show
              when JavaScript is disabled.
         -->
+        <div id="header_wrap" class="outer">
+            <header class="inner">
+             <a id="forkme_banner" href="https://github.com/tommyZZM/away3d-aircraftmuseumdemo">View on GitHub</a>
+
+             <h1 id="project_title">Away3d Aircraft Museum Demo</h1>
+            </header>
+        </div>
         <div id="flashContent">
             <p>
                 To view this page ensure that Adobe Flash Player version
@@ -77,7 +85,9 @@
             </script>
         </div>
 
+
         <noscript>
+           <!-- HEADER -->
             <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="960" height="640" id="AircraftMuseumAlpha">
                 <param name="movie" value="demo.swf" />
                 <param name="quality" value="high" />
